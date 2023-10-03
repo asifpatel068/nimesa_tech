@@ -52,21 +52,21 @@ if __name__ == "__main__":
                 date_time = input("Enter date (YYYY-MM-DD HH:MM:SS):")
                 temperature = get_temperature(weather_data, date_time)
                 if temperature is not None:
-                    print(f"Temperature = {temperature}")
+                    print(f"\nTemperature = {temperature} k")
                 else:
                     print("Data not found")
             elif option == "2":
                 date_time = input("Enter date (YYYY-MM-DD HH:MM:SS):")
                 wind_speed = get_wind_speed(weather_data, date_time)
                 if wind_speed is not None:
-                    print(f"Wind Speed = {date_time}: {wind_speed} m/s")
+                    print(f"\nWind Speed =  {wind_speed} m/s")
                 else:
                     print("Data not found")
             elif option == "3":
                 date_time = input("Enter date (YYYY-MM-DD HH:MM:SS):")
                 pressure = get_pressure(weather_data, date_time)
                 if pressure is not None:
-                    print(f"Pressure at {date_time}: {pressure} hPa")
+                    print(f"\nPressure = {pressure} Pa")
                 else:
                     print("Data not found")
             elif option == "0":
